@@ -8,9 +8,9 @@
     <ion-button color="medium" [routerLink]="['/home']">
       <ion-icon name="home"></ion-icon>
     </ion-button>
-  <ion-card>
+  <ion-card *ngFor="let Porder of orderzPlaced">
     <ion-card-content>
-      <p *ngFor="let Porder of orderzPlaced">
+      <p>
         Order Number: {{Porder.CID}}
         Name: {{Porder.Cname}}
         Sugar: {{Porder.Csugar}} spoon/s
