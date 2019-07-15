@@ -5,6 +5,9 @@
 </ion-header>
   
 <ion-content>
+    <ion-button color="medium" [routerLink]="['/home']">
+      <ion-icon name="home"></ion-icon>
+    </ion-button>
   <ion-card>
     <ion-card-content>
       <p *ngFor="let Porder of orderzPlaced">
@@ -23,7 +26,5 @@
     <ion-icon name="arrow-back"></ion-icon> 
     Place Another Order
 </ion-button>
-<ion-button color="medium" [routerLink]="['/home']">
-  <ion-icon name="home"></ion-icon>
-</ion-button>
+
 </ion-content>
