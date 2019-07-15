@@ -39,7 +39,7 @@ export class CoffeeService {
 
   viewCategory(cid)
   {
-    let selectedCategory = []
+    let selectedCategory
 
     this.categories.forEach(category =>
       {
