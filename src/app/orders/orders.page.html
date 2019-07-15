@@ -1,0 +1,28 @@
+<ion-header>
+  <p style="color: brown; font-style: italic; font-size: 20px;">
+    <img src="../../assets/img/logo.png" width="50px"> COFFEE DEIGH
+  </p>
+</ion-header>
+  
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <p *ngFor="let Porder of orderzPlaced">
+        Order Number: {{Porder.CID}}
+        Name: {{Porder.Cname}}
+        Sugar: {{Porder.Csugar}}
+        Milk: {{Porder.Cmilk}}
+        QTY: {{Porder.Cquantity}}
+        Price: R{{Porder.Cprice}}.00
+      </p>
+    </ion-card-content>
+    
+  </ion-card>
+
+  <ion-button [routerLink]="['/new-order']">
+    <ion-icon name="arrow-back"></ion-icon>
+</ion-button>
+<ion-button [routerLink]="['/home']">
+  <ion-icon name="home"></ion-icon>
+</ion-button>
+</ion-content>

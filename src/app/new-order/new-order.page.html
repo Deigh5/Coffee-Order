@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><img src="../../assets/img/logo.png" width="30px">CATEGORIES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button color="medium" [routerLink]="['/home']">
+      <ion-icon name="home"></ion-icon>
+    </ion-button>
+  <h4 *ngFor="let category of categoriez">
+    <!-- {{category.cID}} -->
+    <img src="../../assets/img/{{category.pic}}" width="50" height="50"><br>
+    {{category.name}}
+    R{{category.price}}
+
+    <ion-button color="medium" [routerLink]="['/placeorder', category.cid]">
+      Order
+      <ion-icon name="basket"></ion-icon></ion-button>
+  </h4>
+
+
+</ion-content>
