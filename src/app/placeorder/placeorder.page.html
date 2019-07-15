@@ -59,7 +59,10 @@
 
     Total Price R: {{totalPrice}}.00<br>
 
-<ion-button [routerLink]="['/orders']" (click)="placeOrders(); getTotalPrice();">
+    <ion-button color="medium" [routerLink]="['/new-order']"> 
+      <ion-icon name="arrow-back"></ion-icon>
+  </ion-button>
+    <ion-button color="medium" [routerLink]="['/orders']" (click)="placeOrders(); getTotalPrice();">
     <ion-icon name="Send"></ion-icon>
 </ion-button><br>
 
